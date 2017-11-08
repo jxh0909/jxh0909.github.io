@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>javascript 数组 | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content=Hexo   >
+  <link rel="apple-touch-icon" href="img/icons/152.png">
+  
+  
+  <meta name="theme-color" content="#0c0c1f">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/koharu/koharu.model.json",0.5)</script>
+  
+<body class=" ">
+  	   <div class="iewarn" id="iewarn">
+<div>---------!!!!!!!!!!!!!!!!-----------------</div>
+检测到您正在使用IE9或更低版本浏览器访问本站，为了您的阅读体验，本站推荐您使用<a href="https://www.google.com/chrome/" target="_blank" >Chrome浏览器</a> 或者<a href="https://www.mozilla.org/en-US/firefox/products/" target="_blank" >Firefox浏览器 </a> 对本站进行访问
+
+</div>
+      <header class="main-header">
+
+<div class="logo nav-list">
+<a href="/"><img src=/img/logooo.jpg alt="logo" width="50px" height="50px" /></a>
+</div>
+<ul class="nav-list nav">
+
+<li class="nav-list">
+<a href="/">
+<i class="fa fa-home" aria-hidden="true" ></i>
+首页
+</a>
+</li>
+
+
+
+	
+<li class="nav-list">
+<a href= https://www.baidu.com/  >
+<i class="fa fa-youtube-play" aria-hidden="true" ></i>
+百度
+</a>
+</li>
+
+
+
+<li class="nav-list">
+<a href="/atom.xml" target="_blank" >
+<i class="fa fa-feed" aria-hidden="true" ></i>
+订阅
+</a>
+</li>
+
+
+
+<li class="nav-list lightmode ">
+<a href="javascript:;" >
+<i class="fa fa-moon-o" aria-hidden="true"></i>
+关灯
+</a>
+</li>
+</ul>
+
+</header>
+        <article>
+  <div class="article-share">
+<div id="qrcode">
+	<div class="qr-text">
+	扫一扫，分享到微信
+	<i class="fa fa-window-close-o fa-2" aria-hidden="true"></i>
+	</div>
+</div>
+<ul class="share-content">
+<li >
+		<i class="fa fa-share-alt" aria-hidden="true"></i>
+	</li>
+	<li>
+		<a ><i class="fa fa-weixin" aria-hidden="true" id="toweixin"></i></a>
+	</li>
+	<li>
+		<a ><i class="fa fa-weibo" aria-hidden="true" id="toweibo"></i></a>
+	</li>
+	<li>
+		<a ><i class="fa fa-twitter" aria-hidden="true" id="totwitter"></i></a>
+	</li>
+</ul>
+</div>
+<div class="article main-body" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <!--采用相对的时间或者绝对的时间，默认相对-->
+
+<div class="article-date">
+  	<time datetime="2017-04-20T13:30:16.000Z" itemprop="datePublished">
+  	
+  	
+  	
+  	
+  	
+    
+          
+      
+      
+        
+    
+    
+    
+  	
+  		
+  	
+  	
+    
+    
+  	
+  	 	
+  	
+  		
+  	
+  	
+    
+    
+  	
+  	
+  	
+  		
+  	
+  	
+  	7monthsago
+
+
+  
+<div>
+read time: 19分钟
+</div>
+</div>
+
+
+
+
+  </div>
+  <div class="article-inner">
+   
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript 数组
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="javascript-数组"><a href="#javascript-数组" class="headerlink" title="javascript 数组"></a><strong>javascript 数组</strong></h1><h2 id="定义数组"><a href="#定义数组" class="headerlink" title="定义数组"></a><strong>定义数组</strong></h2><h3 id="一维数组创建语法："><a href="#一维数组创建语法：" class="headerlink" title="一维数组创建语法："></a><strong>一维数组创建语法：</strong></h3><blockquote>
+<p><strong><code>var 数组名称 = new Array([size]);</code></strong><br><strong>[size] 表示数组中可存放的元素总数或值([ 该选项可选可不选])</strong></p>
+</blockquote>
+<ul>
+<li><p><strong>方法1</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var fruit = new Array( );</div><div class="line">fruit[0]=“apple”</div><div class="line">fruit[1]=“orange”</div><div class="line">fruit[2]=“peach”</div><div class="line">fruit[3]=&quot;bananer&quot;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>方法2</strong></p>
+<blockquote>
+<p><strong><code>var fruit= new Array(&quot;apple&quot;, &quot;orange&quot;, &quot; peach&quot;,&quot;bananer&quot;) //指定数组长度，数组元素赋值</code></strong></p>
+</blockquote>
+</li>
+<li><p><strong>方法3</strong></p>
+<ul>
+<li><strong>指定长度小于数组元素实际数量</strong></li>
+<li><strong>制定长度大于数组元素实际数量</strong></li>
+</ul>
+</li>
+<li><p><strong>方法四：推荐使用</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var arr4 = [false,&quot;aaa&quot;,123];</div><div class="line">alert(arr4);//false,aaa,123</div></pre></td></tr></table></figure>
+<ol>
+<li><strong>数组内可以存放任意类型的数据</strong></li>
+<li><strong>数组元素不赋值，则为undefined</strong></li>
+<li><strong>打印数组时，如果某个元素没有赋值，则为“”</strong></li>
+<li><strong>访问数组范围以外的元素时，不会出现越界异常，为undefined</strong></li>
+<li><strong>定义的数组大小，依然可以添加更多的元素</strong></li>
+</ol>
+</li>
+</ul>
+<h3 id="二维数组创建语法："><a href="#二维数组创建语法：" class="headerlink" title="二维数组创建语法："></a><strong>二维数组创建语法：</strong></h3><ul>
+<li><p><strong>语法1: <code>var arr = new Array([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;],[&#39;d&#39;,&#39;e&#39;]); arr[0]</code>返回第一个一维数组，arr[0][0]返回第一个一维数组的第一个元素‘ a’</strong></p>
+<blockquote>
+<p><strong>二维数组可以理解为一个存放数据内容为一维数组的一维数组</strong></p>
+</blockquote>
+</li>
+<li><p><strong>二维数组创建语法：</strong></p>
+<ul>
+<li><p><strong>语法二:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"> var arr = new Array();</div><div class="line">arr[0]= new Array();</div><div class="line">arr[0][0]= “a”;</div><div class="line">arr[0][1]= “b”;</div><div class="line">arr[0][2]= “c”;</div><div class="line">arr[1]= new Array();</div><div class="line">arr[1][0]= “c”;</div><div class="line">arr[1][1]= “d”;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>javascript的数组不需要设定长度，会自己迚行扩展</strong></p>
+<h2 id="访问数组"><a href="#访问数组" class="headerlink" title="访问数组"></a><strong>访问数组</strong></h2></blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="访问数组代码："><a href="#访问数组代码：" class="headerlink" title="访问数组代码："></a><strong>访问数组代码：</strong></h3><ul>
+<li><strong>一维数组：<code>document.write(fruit[0]); 输出：apple</code></strong></li>
+<li><strong>二维数组：<code>document.write(arr[0][0]); 输出：a</code></strong></li>
+</ul>
+<h3 id="修改已有数组中的值"><a href="#修改已有数组中的值" class="headerlink" title="修改已有数组中的值"></a><strong>修改已有数组中的值</strong></h3><p><strong><code>fruit[0]=“pear”document.write(fruit[0])输出：pear</code></strong></p>
+<h3 id="数组的便利"><a href="#数组的便利" class="headerlink" title="数组的便利"></a><strong>数组的便利</strong></h3><blockquote>
+<p><strong>利用for语句访问数组中的元素值</strong></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">方法一：</div><div class="line">var arr = new</div><div class="line">Array(13.5,3,4,5,6);</div><div class="line">for(var i=0;i&lt;arr.length;i++)&#123;</div><div class="line">alert(arr[i])</div><div class="line">&#125;</div><div class="line">方法二：</div><div class="line">方法二：</div><div class="line">var x</div><div class="line">var mycars = new Array()</div><div class="line">mycars[0] = &quot;Saab&quot;</div><div class="line">mycars[1] = &quot;Volvo&quot;</div><div class="line">mycars[2] = &quot;BMW&quot;</div><div class="line">for (x in mycars)&#123;</div><div class="line">document.write(mycars[x])</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="数组的常用属性和方法"><a href="#数组的常用属性和方法" class="headerlink" title="数组的常用属性和方法"></a><strong>数组的常用属性和方法</strong></h2><ul>
+<li><p><strong>数组常用属性—length属性 数组属性</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">length</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>设置或返回数组中元素的数目，该属性的值始终从数值上大于所属数组的任何一个索引号</strong></li>
+</ul>
+</li>
+<li><p><strong>修改数组的length对数组索引的影响</strong></p>
+<ul>
+<li><strong>手动增大length属性不影响索引</strong></li>
+<li><strong>手动减少length属性会截掉多余的索引</strong></li>
+</ul>
+</li>
+<li><p><strong>修改索引对length属性的影响</strong></p>
+<ul>
+<li><strong>增大数组最大索引号会增大length属性</strong></li>
+</ul>
+</li>
+<li><p><strong>删除索引号最大的索引属性不会影响length属性</strong></p>
+</li>
+</ul>
+<p><strong>###数组常用的方法： 数组方法</strong></p>
+<ul>
+<li><p><strong>join( ) ：把数组的所有元素放入一个字符串，通过一个的分隔符</strong><br><strong>进行分隔</strong></p>
+</li>
+<li><p><strong>pop( )：删除并返回数组的最后一个元素</strong></p>
+</li>
+<li><p><strong>push( )：向数组的末尾添加一个或更多元素，并返回新的长度</strong></p>
+</li>
+<li><p><strong>shift()：删除并返回数组的第一个元素</strong></p>
+</li>
+<li><p><strong>unshift()：向数组的开头添加一个或更多元素，并返回新的长度数组的常用属性和方法</strong></p>
+</li>
+<li><p><strong>reverse()：颠倒数组中元素的顺序</strong></p>
+</li>
+<li><p><strong>sort( )：对数组的元素进行排序</strong></p>
+</li>
+<li><p><strong>concat():连接两个或更多的数组，并返回结果。</strong></p>
+</li>
+<li><p><strong>slice():从某个已有的数组返回选定的元素</strong></p>
+</li>
+<li><p><strong>splice():删除元素，并向数组添加新元素</strong></p>
+<h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a><strong>多维数组</strong></h2><blockquote>
+<p><strong>数组分为一维数组和多维数组二维数组及以上的都称为多维数组，上面我们讲解了一维数组，下面我们例举一下多维数组，以二维数组为例。</strong></p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">[&quot;Name0&quot;, &quot;Age0&quot;, &quot;Address0&quot;],</div><div class="line">[&quot;Name1&quot;, &quot;Age1&quot;, &quot;Address1&quot;],</div><div class="line">[&quot;Name2&quot;, &quot;Age2&quot;, &quot;Address2&quot;]</div><div class="line">]</div></pre></td></tr></table></figure>
+<ul>
+<li><p><strong>二维数组的创建：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Var personnel = new Array();</div><div class="line">Personnel[0]= new Array();</div><div class="line">Personnel[0][0]= “Name0”;</div><div class="line">Personnel[0][1]= “Age0”;</div><div class="line">Personnel[0][2]= “Address0”;</div><div class="line">Personnel[1]= new Array();</div><div class="line">Personnel[1][0]= “Name1”;</div><div class="line">Personnel[1][1]= “Age1”;</div><div class="line">Personnel[1][2]= “Address1”;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//方法2</div><div class="line">Var aa=new Array(); //定义一维数组</div><div class="line">for(i=1;i&lt;=10;i++)</div><div class="line">&#123;</div><div class="line">	aa[i]=new Array(); //将每一个子元素又定义为数组</div><div class="line">for(n=0;n&lt;=10;n++)</div><div class="line">&#123;</div><div class="line">aa[i][n]=i+n; //此时aa[i][n]可以看作是一个二维数 组</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>还可创建三维数组，四维五维甚至一百维的，但是维数越多越复杂，超过二维的很少使用，下面演示了一个五维数组的声明和访问：</strong></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var myArray=new Array();</div><div class="line">myArray[0]=new Array();</div><div class="line">myArray[0][0]=new Array();</div><div class="line">myArray[0][0][0]=new Array();</div><div class="line">myArray[0][0][0][0]=new Array();</div><div class="line">	myArray[0][0][0][0][0]=“This is getting out of hand”</div><div class="line">Document.write(myArray[0][0][0][0][0]);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="数组的排序"><a href="#数组的排序" class="headerlink" title="数组的排序"></a><strong>数组的排序</strong></h2><ul>
+<li><p><strong>sort()方法是按照字符编码的顺序进行排序</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">function sortNumber(a,b)</div><div class="line">&#123;</div><div class="line">return a - b</div><div class="line">&#125;</div><div class="line">var arr = new Array(6)</div><div class="line">arr[0] = &quot;10&quot;</div><div class="line">arr[1] = &quot;5&quot;</div><div class="line">arr[2] = &quot;40&quot;</div><div class="line">arr[3] = &quot;25&quot;</div><div class="line">arr[4] = &quot;1000&quot;</div><div class="line">arr[5] = &quot;1&quot;</div><div class="line">document.write(arr + &quot;&lt;br /&gt;&quot;)</div><div class="line">document.write(arr.sort(sortNumber))</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>输出10,5,40,25,1000,1</strong><br><strong>1,5,10,25,40,1000</strong></p>
+</blockquote>
+</li>
+<li><p><strong>冒泡排序</strong></p>
+<p><strong><code>//冒泡排序法一:function sort(elements){for(var i=0;i&lt;elements.length-1;i++){for(var j=0;j&lt;elements.length-i-1;j++){if(elements[j]&gt;elements[j+1]){var swap=elements[j];elements[j]=elements[j+1];elements[j+1]=swap;} }}}var elements = [3, 1, 5, 7, 2, 10, 8, 9, 4, 6];document.write(&#39;before: &#39; +elements+&quot;&lt;br/&gt;&quot;);sort(elements);document.write(&#39; after: &#39; + elements);&gt; 输出：before: 3,1,5,7,2,10,8,9,4,      after: 1,2,3,4,5,6,7,8,9,10function bubbleSort(arr) {var i = arr.length, j;var tempExchangVal;while (i &gt; 0) {for (j = 0; j &lt; i - 1; j++) {if (arr[j] &gt; arr[j + 1]) {tempExchangVal = arr[j];      arr[j] = arr[j + 1];arr[j + 1] = tempExchangVal;}}i--;}return arr;}</code></strong></p>
+</li>
+</ul>
+<h1 id="城市二级联动"><a href="#城市二级联动" class="headerlink" title="城市二级联动:"></a><strong>城市二级联动:</strong></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div></pre></td><td class="code"><pre><div class="line">&lt;!doctype html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;meta name=&quot;viewport&quot;</div><div class="line">          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;</div><div class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</div><div class="line">    &lt;title&gt;Document&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;select  id=&quot;gametype&quot;&gt;</div><div class="line">    &lt;option value=&quot;aa&quot;&gt;游戏分类&lt;/option&gt;</div><div class="line">&lt;/select&gt;&lt;/br&gt; </div><div class="line">&lt;/br&gt;</div><div class="line">&lt;/br&gt;</div><div class="line"></div><div class="line">&lt;select  id=&quot;gamelist&quot;&gt;</div><div class="line">    &lt;option&gt;游戏名称&lt;/option&gt;</div><div class="line"></div><div class="line">&lt;/select&gt;</div><div class="line">&lt;script&gt;</div><div class="line"></div><div class="line">     window.onload=function () &#123;</div><div class="line">         var game = new Array( );</div><div class="line"></div><div class="line">         game[&apos;纸牌游戏&apos;]=[&apos;斗地主&apos;, &apos;拖拉机&apos;, &apos;桥牌&apos;, &apos;拱猪&apos;, &apos;打百分&apos;];</div><div class="line">         game[&apos;棋类游戏&apos;]=[&apos;军棋&apos;, &apos;跳棋&apos;, &apos;五子棋&apos;, &apos;围棋&apos;, &apos;中国象棋&apos;, &apos;国际象棋&apos;, &apos;飞行棋&apos;, &apos;黑白棋&apos;];</div><div class="line">         game[&apos;其他游戏&apos;] = [&apos;连连看&apos;, &apos;俄罗斯方块&apos;, &apos;麻将&apos;, &apos;台球&apos;, &apos;挑错&apos;];</div><div class="line"></div><div class="line"></div><div class="line">         //</div><div class="line">         var gametype=document.getElementById(&quot;gametype&quot;)</div><div class="line">         for(var x in game)&#123;</div><div class="line"></div><div class="line">             gametype.add(new Option(x,x))</div><div class="line">         &#125;</div><div class="line">        gametype.onchange=function () &#123;</div><div class="line"></div><div class="line"></div><div class="line">             var  gamelist=document.getElementById(&quot;gamelist&quot;)</div><div class="line">             gamelist.options.length=0;</div><div class="line">             var  gametypevalue=gametype.value;</div><div class="line"></div><div class="line">             for(var j in game)&#123;</div><div class="line">              if(j==gametypevalue)&#123;</div><div class="line"></div><div class="line">                  for(var f=0;f&lt;game[j].length;f++)&#123;</div><div class="line">                      console.log(game[j]);</div><div class="line">                      console.log(game[j][f]);</div><div class="line">                      gamelist.add(new Option(game[j][f],game[j][f]))</div><div class="line">                  &#125;</div><div class="line"></div><div class="line"></div><div class="line">              &#125;</div><div class="line">          &#125;</div><div class="line"></div><div class="line">         &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+      
+    </div>
+    
+<div class="reward" id="rewardme">
+「喜欢，就赞一个呗！(:3 」∠)_ (￣y▽￣)~*」
+
+<div class="reward-qr">
+<div class="reward-tks">
+「鼓励我写出更好的文字」
+<i class="fa fa-window-close" aria-hidden="true"></i>
+</div>
+<img src= "/img/erweima.jpg" />
+「支付宝」
+</div>
+
+
+<div class="reward-btn" >
+<div class="reward-text">赏</div>
+</div>
+
+
+</div>
+ 
+    
+    
+
+
+
+
+<div class="copyright">
+<blockquote>
+<strong>本文链接</strong>:  <a href= "http://yoursite.com/2017/04/20/javascript 数组/" href="_blank" > http://yoursite.com/2017/04/20/javascript 数组/ </a>
+<div>
+<strong>版权声明</strong>:本博客所有文章除特别声明外，均采用<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" >CC BY-NC-SA 3.0 CN许可协议</a>进行许可。转载请注明出处！
+</div>
+</blockquote>
+</div>
+
+	
+
+    
+    <div class="cat-and-tags">
+    
+  <div class="article-category">
+  	<div class="categories">
+  	<i class="fa fa-hashtag" aria-hidden="true"></i>
+    <a class="article-category-link" href="/categories/JS/">JS</a>►<a class="article-category-link" href="/categories/JS/动态网页编程/">动态网页编程</a>
+  </div>  
+  </div>
+  
+
+    <div class="show-tags">
+<ul>
+
+
+
+<li>
+
+
+
+<a href=http://yoursite.com/tags/JavaScript >
+<i class="fa fa-tags" aria-hidden="true"></i>
+JavaScript
+</a>
+</li>
+
+
+</ul>
+</div>
+
+
+    </div>
+    
+  </div>
+ 
+ 
+  <!--上一篇下一篇 -->
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/04/25/JQuery 基础二/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          JQuery 基础
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/19/DOM节点查找  事件/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">javascript  Dom节点查找、事件</div>
+    </a>
+  
+</nav>
+
+  
+
+</div>
+</article>
+
+      <footer id="footer">
+  <div class="outer">
+     
+     <div id="footer-info" class="inner">
+     
+      &copy;  2014 - 2017 
+       Jiang Xiu Hong<br>
+
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      </br>
+      theme <a href="http://github.com/zhangolve/olive">olive</a> by zhangolve
+      </div>
+      
+      
+     
+
+
+     
+    
+  </div>
+  <div class="to-top">
+    <div class="toTop-btn">
+    <div class="toTop-text">返回顶部</div>
+  	<button class="toTop-button">
+  		<i class="fa fa-arrow-up" aria-hidden="true"></i>
+  	</button >
+    </div>
+  </div>
+</footer>
+     
+    
+
+<script src="/js/qrcode.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/lightmode.js"></script>
+
+<script src="/js/iewarn.js"></script>
+
+
+  
+</body>
+</html>

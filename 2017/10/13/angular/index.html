@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>scratch angular框架 | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content=Hexo   >
+  <link rel="apple-touch-icon" href="img/icons/152.png">
+  
+  
+  <meta name="theme-color" content="#0c0c1f">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/koharu/koharu.model.json",0.5)</script>
+  
+<body class=" ">
+  	   <div class="iewarn" id="iewarn">
+<div>---------!!!!!!!!!!!!!!!!-----------------</div>
+检测到您正在使用IE9或更低版本浏览器访问本站，为了您的阅读体验，本站推荐您使用<a href="https://www.google.com/chrome/" target="_blank" >Chrome浏览器</a> 或者<a href="https://www.mozilla.org/en-US/firefox/products/" target="_blank" >Firefox浏览器 </a> 对本站进行访问
+
+</div>
+      <header class="main-header">
+
+<div class="logo nav-list">
+<a href="/"><img src=/img/logooo.jpg alt="logo" width="50px" height="50px" /></a>
+</div>
+<ul class="nav-list nav">
+
+<li class="nav-list">
+<a href="/">
+<i class="fa fa-home" aria-hidden="true" ></i>
+首页
+</a>
+</li>
+
+
+
+	
+<li class="nav-list">
+<a href= https://www.baidu.com/  >
+<i class="fa fa-youtube-play" aria-hidden="true" ></i>
+百度
+</a>
+</li>
+
+
+
+<li class="nav-list">
+<a href="/atom.xml" target="_blank" >
+<i class="fa fa-feed" aria-hidden="true" ></i>
+订阅
+</a>
+</li>
+
+
+
+<li class="nav-list lightmode ">
+<a href="javascript:;" >
+<i class="fa fa-moon-o" aria-hidden="true"></i>
+关灯
+</a>
+</li>
+</ul>
+
+</header>
+        <article>
+  <div class="article-share">
+<div id="qrcode">
+	<div class="qr-text">
+	扫一扫，分享到微信
+	<i class="fa fa-window-close-o fa-2" aria-hidden="true"></i>
+	</div>
+</div>
+<ul class="share-content">
+<li >
+		<i class="fa fa-share-alt" aria-hidden="true"></i>
+	</li>
+	<li>
+		<a ><i class="fa fa-weixin" aria-hidden="true" id="toweixin"></i></a>
+	</li>
+	<li>
+		<a ><i class="fa fa-weibo" aria-hidden="true" id="toweibo"></i></a>
+	</li>
+	<li>
+		<a ><i class="fa fa-twitter" aria-hidden="true" id="totwitter"></i></a>
+	</li>
+</ul>
+</div>
+<div class="article main-body" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <!--采用相对的时间或者绝对的时间，默认相对-->
+
+<div class="article-date">
+  	<time datetime="2017-10-13T13:30:16.000Z" itemprop="datePublished">
+  	
+  	
+  	
+  	
+  	
+    
+      
+      
+         
+        
+    
+    
+    
+  	
+  		
+  	
+  	
+    
+    
+  	
+  	 	
+  	
+  		
+  	
+  	
+    
+    
+  	
+  	
+  	
+  		
+  	
+  	
+  	1monthago
+
+
+  
+<div>
+read time: 8分钟
+</div>
+</div>
+
+
+
+
+  </div>
+  <div class="article-inner">
+   
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      scratch angular框架
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="angular"><a href="#angular" class="headerlink" title="angular"></a><strong>angular</strong></h1><ul>
+<li><strong>$scope  (  html 和  controller(js) 的桥梁 ) ( 所有数据和方法的集合 )</strong><ul>
+<li><strong>作用域: $scope的作用域只在他当前的控制器中有效,在其他地方无效</strong></li>
+</ul>
+</li>
+<li>$rootScope (  scope 和  controller(js) 的桥梁 )<ul>
+<li><strong>作用域: $rootScope 的作用域是当前angular项目中</strong></li>
+</ul>
+</li>
+<li><strong>$rootScope 可作用于整个应用中。是各个 controller 中 scope 的桥梁。用 rootscope 定义的值，可以在各个 controller 中使用。</strong><h2 id="AngularJS-应用组成如下：MVC"><a href="#AngularJS-应用组成如下：MVC" class="headerlink" title="AngularJS 应用组成如下：MVC"></a><strong>AngularJS 应用组成如下：MVC</strong></h2></li>
+<li><p><strong>View(视图模型), 即 HTML。</strong></p>
+</li>
+<li><p><strong>Model(数据模型), 当前视图中可用的数据。</strong></p>
+</li>
+<li><p><strong>Controller(控制器), 即 JavaScript 函数，可以添加或修改属性。</strong></p>
+<p>​</p>
+</li>
+</ul>
+<h2 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a><strong>过滤器</strong></h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">1. **currency (货币处理)**</div><div class="line">     **&#123;&#123; num | currency: "￥" : "5" &#125;&#125;**</div><div class="line"></div><div class="line">2. **date (日期格式化)**</div><div class="line">     **&#123;&#123; date | date : 'yyyy-MM-dd hh:mm:ss EEEE' &#125;&#125;**</div><div class="line"></div><div class="line">3. **filter(匹配子串)**</div><div class="line">     　　输入过滤器可以通过一个管道字符（|）和一个过滤器添加到指令中，该过滤器后跟一个冒号和一个模型名称。</div><div class="line">               filter 过滤器从数组中选择一个子集</div><div class="line">     **// 查找name为iphone的行**</div><div class="line">     **&#123;&#123; [&#123;"age": 20,"id": 10,"name": "iphone"&#125;,**</div><div class="line">     **&#123;"age": 12,"id": 11,"name": "sunm xing"&#125;,**</div><div class="line">     **&#123;"age": 44,"id": 12,"name": "test abc"&#125;**</div><div class="line">     **] | filter:&#123;'name':'iphone'&#125; &#125;&#125;**</div><div class="line"></div><div class="line">  4. **json(格式化json对象)**</div><div class="line">     　　和我们熟悉的JSON.stringify()一样。</div><div class="line">     **&#123;&#123; jsonTest | json&#125;&#125;**</div><div class="line"></div><div class="line">  5. **limitTo(限制数组长度或字符串长度)**</div><div class="line">     **&#123;&#123; childrenArray | limitTo : 2 &#125;&#125; //将会显示数组中的前两项**</div><div class="line">     **&#123;&#123; childrenArray | limitTo : -4 &#125;&#125; //将会显示数组中的后四项**</div><div class="line"></div><div class="line">  6. lowercase(小写)　</div><div class="line">     **&#123;&#123; "TANK is GOOD" | lowercase &#125;&#125;// 结果：tank is good**</div><div class="line"></div><div class="line">  7. **uppercase(大写)**</div><div class="line">     **&#123;&#123; "lower cap string" | uppercase &#125;&#125; // 结果：LOWER CAP STRING**</div><div class="line"></div><div class="line">  8. **number(格式化数字)**</div><div class="line">     **&#123;&#123; num | number : 2 &#125;&#125; //保留几位小数**</div><div class="line"></div><div class="line">  9. **orderBy(排序)**</div><div class="line">     **&#123;&#123; childrenArray | orderBy : 'age' &#125;&#125;  //按age属性值进行排序（升），若age：true，则降序**</div><div class="line">     **&#123;&#123; childrenArray | orderBy : orderFunc &#125;&#125;  //按照函数的返回值进行排序**</div><div class="line">     **&#123;&#123; childrenArray | orderBy : ['age','name'] &#125;&#125;  //如果age相同，按照name进行排序**</div></pre></td></tr></table></figure>
+<ol>
+<li><p><strong>自定义过滤器：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;带过滤数据 | 过滤器名：参数1：参数2：参数3.....&#125;&#125; </div><div class="line"></div><div class="line">  app.filter('过滤器名', function () &#123; </div><div class="line">      return function (待过滤数据, 参数....) &#123; </div><div class="line">          ...... </div><div class="line">          return 已过滤数据; </div><div class="line">  **&#125;**</div></pre></td></tr></table></figure>
+<p>​</p>
+<p>​</p>
+</li>
+</ol>
+<h3 id="自定义过滤器"><a href="#自定义过滤器" class="headerlink" title="自定义过滤器"></a><strong>自定义过滤器</strong></h3><ul>
+<li><strong>filter函数可以实现自定义过滤器</strong><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">app.filter(<span class="string">"money"</span>,<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;  <span class="comment">//第一个参数是过滤器名称,</span></div><div class="line">       <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">a</span>) </span>&#123;   <span class="comment">//返回的函数是过滤器执行函数  ,函数中的参数是过滤器管道符 前面的数据</span></div><div class="line">           <span class="keyword">var</span> x=a*<span class="number">10</span>;</div><div class="line">           <span class="keyword">return</span> x         <span class="comment">//  对参数进行你想要的操作,返回一个新的数据</span></div><div class="line">       &#125;</div><div class="line">   &#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="自定义服务"><a href="#自定义服务" class="headerlink" title="自定义服务"></a><strong>自定义服务</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">app.service(&quot;string&quot;,function () &#123;  //  第一个参数是 服务名称(方法的集合).,</div><div class="line"></div><div class="line">      this.spli=function (a,b) &#123;   // this 指向 自定义的服务,</div><div class="line">          return a.split(b);</div><div class="line">      &#125;</div><div class="line">      this.fn=function()&#123;&#125;</div><div class="line"></div><div class="line">  &#125;)</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>使用:</strong><ul>
+<li><strong>使用时需要先注入(传进去),</strong></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+<div class="reward" id="rewardme">
+「喜欢，就赞一个呗！(:3 」∠)_ (￣y▽￣)~*」
+
+<div class="reward-qr">
+<div class="reward-tks">
+「鼓励我写出更好的文字」
+<i class="fa fa-window-close" aria-hidden="true"></i>
+</div>
+<img src= "/img/erweima.jpg" />
+「支付宝」
+</div>
+
+
+<div class="reward-btn" >
+<div class="reward-text">赏</div>
+</div>
+
+
+</div>
+ 
+    
+    
+
+
+
+
+<div class="copyright">
+<blockquote>
+<strong>本文链接</strong>:  <a href= "http://yoursite.com/2017/10/13/angular/" href="_blank" > http://yoursite.com/2017/10/13/angular/ </a>
+<div>
+<strong>版权声明</strong>:本博客所有文章除特别声明外，均采用<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" >CC BY-NC-SA 3.0 CN许可协议</a>进行许可。转载请注明出处！
+</div>
+</blockquote>
+</div>
+
+	
+
+    
+    <div class="cat-and-tags">
+    
+  <div class="article-category">
+  	<div class="categories">
+  	<i class="fa fa-hashtag" aria-hidden="true"></i>
+    <a class="article-category-link" href="/categories/框架/">框架</a>►<a class="article-category-link" href="/categories/框架/动态网页编程/">动态网页编程</a>
+  </div>  
+  </div>
+  
+
+    <div class="show-tags">
+<ul>
+
+
+
+<li>
+
+
+
+<a href=http://yoursite.com/tags/JavaScript >
+<i class="fa fa-tags" aria-hidden="true"></i>
+JavaScript
+</a>
+</li>
+
+
+</ul>
+</div>
+
+
+    </div>
+    
+  </div>
+ 
+ 
+  <!--上一篇下一篇 -->
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/10/13/scratch_1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          scratch mvc框架
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/05/01/window对象的事件/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">javascript 对象的事件</div>
+    </a>
+  
+</nav>
+
+  
+
+</div>
+</article>
+
+      <footer id="footer">
+  <div class="outer">
+     
+     <div id="footer-info" class="inner">
+     
+      &copy;  2014 - 2017 
+       Jiang Xiu Hong<br>
+
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      </br>
+      theme <a href="http://github.com/zhangolve/olive">olive</a> by zhangolve
+      </div>
+      
+      
+     
+
+
+     
+    
+  </div>
+  <div class="to-top">
+    <div class="toTop-btn">
+    <div class="toTop-text">返回顶部</div>
+  	<button class="toTop-button">
+  		<i class="fa fa-arrow-up" aria-hidden="true"></i>
+  	</button >
+    </div>
+  </div>
+</footer>
+     
+    
+
+<script src="/js/qrcode.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/lightmode.js"></script>
+
+<script src="/js/iewarn.js"></script>
+
+
+  
+</body>
+</html>
