@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>首页 - 中通快递</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="中通快递官网为您提供中通快递单号(运单)跟踪查询,投诉电话查询,运费报价查询,中通营业网点查询,在线下单(寄件)等服务,全国统一客服热线：95311" name="Description" />
+    <meta content="中通快递单号查询,网点查询,投诉电话查询,在线寄件" name="Keywords" />
+    <meta content="中通快递官网为您提供中通快递单号(运单)跟踪查询,投诉电话查询,运费报价查询,中通营业网点查询,在线下单(寄件)等服务,全国统一客服热线：95311" name="searchtitle" />
+    <meta content="all" name="robots" />
+    <meta name="renderer" content="webkit">
+    <meta name="mobile-agent" content="format=html5;url=http://wap.zto.com/" />
+    <meta name="mobile-agent" content="format=wml; url=http://wap.zto.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/Content/themes/ztotheme/js/zto.js?v20141215"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/Content/themes/ztotheme/Images/zto_favicon.png" media="screen" />
+    <script>
+
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?a568d570cd1ef66819cda1e7d5cbbe08";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+        //$(document).ready(function () {
+
+
+        //    $("Link").each(function() {
+        //        var url = $(this).attr("href");
+        //        alert($(this).attr("href"))
+
+        //        var url1 = timestamp(url);
+        //        $(this).attr("href", url1);
+        //        alert($(this).attr("href"))
+        //    });
+        //    // var url = document.getElementsByTagName('Link');
+        //    //// alert(url.length);
+        //    //// for (var o in url.length) {
+        //    //     alert(url[0].href);
+        //    //     var url1 = timestamp(url[0].href);
+        //    //     alert(url1);
+        //    //     document.getElementsByTagName('Link')[0].href = url1;
+        //    //     alert(url[0].href);
+        //    //  }
+        //    //$(".index-main a").each(function(){
+        //    //    var theLink = $(this);
+        //    //   // alert(theLink)
+        //    //    var url = theLink.attr("href");
+        //    //    alert(url)
+        //    //    url = timestamp(url);
+        //    //    //theLink.on("click",function(){
+        //    //    //    //点击链接为链接添加时间戳/Content/themes/ztotheme/
+        //    //    //    //if(url.substr(0,7)=="http://"&& url.indexOf("item.shejicool.com/") > 0){
+        //    //    //    //    theLink.attr("href", url); 
+        //    //    //    //}
+        //    //    if (url.indexOf("/Content/themes/ztotheme/css/") > 0) {
+        //    //            theLink.attr("href", url);
+        //    //        }
+        //    //    //})
+        //    //});
+        //});
+
+        ////解决浏览器缓存
+        //function timestamp(url){
+        //    //var getTimestamp=Math.random();
+        //    var getTimestamp=new Date().getTime();
+        //    if(url.indexOf("?")>-1){
+        //        url=url+"&t="+getTimestamp
+        //    }else{
+        //        url=url+"?t="+getTimestamp
+        //    }
+        //    return url;
+        //}
+
+    </script>
+
+
+    <script type="text/javascript">
+        var url = window.location.href;
+        var u = url.substring(url.indexOf("#") + 1, url.length);
+        if (url.indexOf("#") > -1) {
+            if (u == "mobile") {
+                setCookie("ismobile", "true");
+            }
+        }
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1,
+                    presto: u.indexOf('Presto') > -1,
+                    webKit: u.indexOf('AppleWebKit') > -1,
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) && u.indexOf('MiuiBrowser') == -1,
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1 || u.indexOf('MiuiBrowser') > -1,
+                    iPhone: u.indexOf('iPhone') > -1 && u.indexOf('MiuiBrowser') == -1,
+                    iPad: u.indexOf('iPad') > -1,
+                    wp: u.indexOf('IEMobile') > -1 || u.indexOf('Windows Phone') > -1,
+                    Nokia: u.indexOf('Symbian') > -1,
+                    webApp: u.indexOf('Safari') == -1
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        };
+
+        if (browser.versions.mobile || browser.versions.wp || browser.versions.iPad || browser.versions.iPhone || browser.versions.Nokia) {
+            if (getCookie("ismobile") != "true") {
+
+                location.replace('http://m.zto.com/');
+            }
+        }
+    </script>
+    
+    <link href="/Content/themes/ztotheme/css/index.css?v_20170727" rel="stylesheet" type="text/css" />
+    <link href="/Content/themes/ztotheme/css/base.css?v_20170727" rel="stylesheet" type="text/css" />
+
+
+    
+</head>
+<body>
+    <div class="headTips yixin"></div>
+    <div id="headwarp">
+        <div id="headState" class="upper">
+    
+</div>
+<script>
+    $("#headState").load("/Account/Index")
+</script>
+        
+        <div class="head">
+            <div class="headcont clearfix" style="position: relative">
+                <img style="position: absolute; left: 50%; margin-left: 135px; top: 16px;" src="/Content/themes/base/images/zto_nyse.png" />
+                <div class="fl">
+                    <a href="/">
+                        <img src="/Content/themes/ztotheme/Images/base/logo.png" width="250" height="51"/></a>
+                    <img src="/Content/themes/ztotheme/Images/base/head-image_18.png" width="198" height="26"/>
+
+                </div>
+                
+                <div class="fr" style="margin-top: -5px">
+                    <ul>
+                        <li>
+                            <a title="中通快递官方微博" href="http://weibo.com/zto200258" target="_blank">
+                                <img src="/Content/themes/ztotheme/Images/base/head-icon-1.png" width="36" height="34"/>
+                            </a>
+                        </li>
+                        <li><a title="中通官方支付宝服务窗" id="headzhifubao" href="/Alipay/">
+                                <img src="/Content/themes/ztotheme/Images/base/head-icon-2.png?v20150420" width="35" height="34"/>
+                            </a>
+                        </li>
+                        <li><a title="中通微信公众号" href="/WeChat/" id="headweixin">
+                            <img src="/Content/themes/ztotheme/Images/base/head-icon-3.png" width="35" height="34"/></a></li>
+                        <li><a title="中通QQ公众号" href="/Qq/" id="headqq">
+                            <img src="/Content/themes/ztotheme/Images/base/qq.png" width="35" height="34"/></a></li>
+                        <li><a title="手机触屏版" href="/WAP/">
+                            <img src="/Content/themes/ztotheme/Images/base/head-icon-4.png" width="35" height="34"/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menucont">
+                <div class="fl">
+                    <ul class="clearfix nav" id="nav">
+                        <li class="nLi on" id="nav_index">
+                            <h3><a href="/">首页</a></h3>
+                        </li>
+                        <li class="nLi " id="nva_productService">
+                            <h3><a href="/ServiceProduct">产品服务</a></h3>
+                            <ul class="sub">
+                                <li><a href="/ServiceProduct/TimeProduct8/">时效件</a></li>
+                                <li><a href="/ServiceProduct/ElectronicBill/">增值服务</a></li>
+                                <li><a href="/ServiceProduct/CHK/">港台件</a></li>
+                                <li><a href="/ServiceProduct/DRU/">国际件</a></li>
+                                <li><a href="/ServiceProduct/EAfterSale/">售后服务</a></li>
+                            </ul>
+                        </li>
+                        <li class="nLi " id="nva_customerService">
+                            <h3><a href="/GuestService">客户服务</a></h3>
+                            <ul class="sub">
+                                <li><a href="/GuestService/">快件查询</a></li>
+                                
+                                <li><a href="/GuestService/SiteQuery/">服务网点查询</a></li>
+                                <li><a href="/GuestService/PriceQuery/">报价时效查询</a></li>
+                                <li><a href="/GuestService/Contraband/">禁寄品须知</a></li>
+                                <li><a href="/GuestService/Complaints/">投诉电话查询</a></li>
+                                <li><a href="http://zop.zto.com">开放平台</a></li>
+                            </ul>
+                        </li>
+                        <li class="nLi " id="nva_cooperation">
+                            <h3><a href="/League">加盟合作</a></h3>
+                            <ul class="sub">
+                                <li><a href="/League/">国内合作</a></li>
+                                <li><a href="/League/International/">国际合作</a></li>
+                                <li><a href="/League/Instructions/">合作说明</a></li>
+                                <li><a href="/League/Rulers/">合作商守则</a></li>
+                            </ul>
+                        </li>
+                        <li class="nLi " id="nva_recruitment">
+                            <h3><a href="/Job">人才招聘</a></h3>
+                        </li>
+                        <li class="nLi " id="nav_about">
+                            <h3><a href="/CompanyIntroduce">走进中通</a></h3>
+                            <ul class="sub">
+                                <li><a href="/CompanyIntroduce/">企业介绍</a></li>
+                                <li><a href="/CompanyIntroduce/SocialResponsibility/">社会荣誉</a></li>
+                                <li><a href="/CompanyIntroduce/CompanyEvents/">企业文化</a></li>
+                                <li><a href="/CompanyIntroduce/CompanyVideo/">企业展示</a></li>
+                                <li><a href="/CompanyIntroduce/CompanyTel/">联系我们</a></li>
+                            </ul>
+                        </li>
+                        <li class="nLi " id="nav_news">
+                            <h3><a href="/News">新闻动态</a></h3>
+                            <ul class="sub">
+                                <li><a href="/News/">公司动态</a></li>
+                                <li><a href="/News/BusinessNews/">行业新闻</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nLi last_li " id="nav_investorRelations">
+                             <h3><a href="http://zto.investorroom.com/" target="_blank">Investor Relations</a></h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="kefuicon">
+                    <a href="/GuestService/Service/">
+                        <img src="/Content/themes/ztotheme/Images/base/kefuicon1.png" width="240" height="61" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+<script type="text/javascript" src="/Content/js/layer/layer.min.js"></script>
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="/Content/themes/ztotheme/css/ie6.css?v000020" type="text/css" media="screen" />
+<script type="text/javascript" src="/Content/themes/ztotheme/js/ie6.js?v000020"></script>
+<![endif]-->
+<div id="adwarp">
+    <div class="m_banner">
+                            <div class="banner" style="background-image: url(http://img.zto.cn/ServiceFiles/636228385142123841.jpg);" id="banner1">
+                                <a target="_blank" title="95311"></a>
+                            </div>
+                            <div class="banner" style="background-image: url(http://img.zto.cn/ServiceFiles/636295793494306635.jpg); display: none;" id="banner2">
+                                <a href="http://Ztts.zto.cn" target="_blank" title="2017年度十佳评选"></a>
+                            </div>
+                            <div class="banner" style="background-image: url(http://img.zto.cn/ServiceFiles/635610709195476666.jpg); display: none;" id="banner3">
+                                <a href="http://www.zto.com/WeChat/" target="_blank" title="新版微信"></a>
+                            </div>
+                            <div class="banner" style="background-image: url(http://img.zto.cn/ServiceFiles/635781881959122685.jpg); display: none;" id="banner4">
+                                <a href="http://www.zto.com/CompanyIntroduce/OneDay/" target="_blank" title="中通人的一天"></a>
+                            </div>
+                            <div class="banner" style="background-image: url(http://img.zto.cn/ServiceFiles/635890651722678088.jpg); display: none;" id="banner5">
+                                <a href="http://www.zto.com/CompanyIntroduce/Innovation" target="_blank" title="大众创业万众创新"></a>
+                            </div>
+
+
+                <div class="banner_ctrl"><a href="#" class="prev" title=""></a><a href="javascript:;" class="next" title=""></a></div>
+
+        <div class="w980 mauto oh">
+            <div class="searchbox">
+                <ul class="title">
+                    <li class="current"><a>运单查询</a></li>
+                    
+                    <li id="tab_onlineShipping"><a href="https://my.zto.com/Order/" target="_blank">在线寄件</a></li>
+                </ul>
+                <div class="bd">
+                    <div class="part1">
+                        <form action="/GuserService/Bill" method="GET" name="formbill" target="_blank" id="formbill">
+                            <textarea id="txtbill" name="txtbill" rows="20" placeholder="请输入要查询的单号，多个单号请用Enter(回车)键隔开(最多10个)"></textarea>
+                            <div class="clean" id="cleanbill">清除</div>
+                            <div class="makesure" id="btn_onlineTracking" onclick="return checkBillData()">确定</div>
+                        </form>
+                    </div>
+                    <div class="part1" style="display: none;">
+                        <div class="clearfix mb20 mt20">
+                            <div class="fl">发件地址：</div>
+                            <div class="fl">
+                                <input name="" type="text" class="input" />
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="fl">收件地址：</div>
+                            <div class="fl">
+                                <input name="" type="text" class="input" />
+                            </div>
+                        </div>
+                        <div class="makesure1">确定</div>
+                    </div>
+                </div>
+                <!--2015年圣诞节-->
+                <div class="top-decorate"></div>
+                <div class="left-decorate"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="content">
+    <div class="fastchannel">
+        <ul class="clearfix">
+            <li id="btn_contrabandQuery">
+                <a href="/GuestService/Contraband" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/weijin.png" width="45" height="45" />
+                </a>
+                <h4><a href="/GuestService/Contraband" target="_blank">违禁品查询</a></h4>
+            </li>
+            <li id="btn_productService">
+                <a href="/ServiceProduct" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/products.png" width="45" height="45" />
+                </a>
+                <h4><a href="/ServiceProduct" target="_blank">产品服务</a></h4>
+            </li>
+            <li id="btn_siteQuery">
+                <a href="/GuestService/SiteQuery" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/address.png" width="45" height="45" />
+                </a>
+                <h4><a href="/GuestService/SiteQuery" target="_blank">网点查询</a></h4>
+            </li>
+            <li id="btn_offerTime">
+                <a href="/GuestService/PriceQuery" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/money.png" width="45" height="45" />
+                </a>
+                <h4><a href="/GuestService/PriceQuery" target="_blank">报价时效查询</a></h4>
+            </li>
+            <li id="btn_onlineShipping">
+                <a href="http://my.zto.com/Order/" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/online.png" width="45" height="45" />
+                </a>
+                <h4><a href="http://my.zto.com/Order/" target="_blank">在线寄件</a></h4>
+            </li>
+            <li id="btn_ztoInternational">
+                <a href="http://g.zto.com/" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/international.png" width="45" height="45" />
+                </a>
+                <h4><a href="http://g.zto.com/" target="_blank">中通国际</a></h4>
+            </li>
+            <li id="btn_orderSubscription">
+                <a href="https://my.zto.com/user/subbill" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/mobile.png" width="45" height="45" />
+                </a>
+                <h4><a href="https://my.zto.com/user/subbill" target="_blank">单号订阅</a></h4>
+            </li>
+            <li id="btn_customerService">
+                <a href="http://kefu.jx.zto.com/webim/im.html?tenantId=27801&to=systemkefu&appKey=ssy%23chat&xmppServer=im-api.jx.zto.com:5280&restServer=a1.jx.zto.com:8080" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/kefu11.png" width="45" height="45" />
+                </a>
+                <h4><a href="http://kefu.jx.zto.com/webim/im.html?tenantId=27801&to=systemkefu&appKey=ssy%23chat&xmppServer=im-api.jx.zto.com:5280&restServer=a1.jx.zto.com:8080" target="_blank">在线客服</a></h4>
+            </li>
+            <li id="btn_ztoTop">
+                <a href="http://www.ztbest.com/" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/shopping.png" width="45" height="45" />
+                </a>
+                <h4><a href="http://www.ztbest.com/" target="_blank">中通优选</a></h4>
+            </li>
+            <li id="btn_rotaPrint">
+                <a href="https://zpa.zto.com/gw/index.html" target="_blank">
+                    <img src="/Content/themes/ztotheme/Images/base/print.png" width="45" height="45" />
+                </a>
+                <h4><a href="https://zpa.zto.com/gw/index.html" target="_blank">面单打印</a></h4>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contentwarp clearfix">
+        <div class="fl w660">
+            <div class="branchsearch">
+                <div class="title clearfix">
+                    <div class="fl">
+                        <span>服务网点查询</span>
+                        <div class="branchicon"></div>
+                    </div>
+                    <div class="fr branchtags">
+                        
+
+
+                    </div>
+
+                </div>
+                <div class="branchbd">
+                    <div class="part1" style="border: 0px;">
+<form action="/GuestService/SiteQuery" method="post">                            <ul style="padding: 15px 2px 0px 30px;">
+                                <li class="firstChild">
+                                    <span>热门城市：</span>
+                                    <a href="/GuestService/SiteQuery?Place=%E5%B9%BF%E4%B8%9C%E7%9C%81-%E5%B9%BF%E5%B7%9E%E5%B8%82">广州</a>
+
+                                    <a class="orange" href="/GuestService/SiteQuery?Province=%E4%B8%8A%E6%B5%B7">上海</a>
+                                    <a href="/GuestService/SiteQuery?Province=%E5%8C%97%E4%BA%AC">北京</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E5%B9%BF%E4%B8%9C%E7%9C%81-%E6%B7%B1%E5%9C%B3%E5%B8%82">深圳</a>
+                                    <a class="orange" href="/GuestService/SiteQuery?Place=%E6%B5%99%E6%B1%9F%E7%9C%81-%E6%9D%AD%E5%B7%9E%E5%B8%82">杭州</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E6%B5%99%E6%B1%9F%E7%9C%81-%E9%87%91%E5%8D%8E%E5%B8%82">金华</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E5%B9%BF%E4%B8%9C%E7%9C%81-%E4%B8%9C%E8%8E%9E%E5%B8%82">东莞</a>
+                                    <a href="/GuestService/SiteQuery?Province=%E5%A4%A9%E6%B4%A5">天津</a>
+
+                                    <a href="/GuestService/SiteQuery?Place=%E6%B1%9F%E8%8B%8F%E7%9C%81-%E8%8B%8F%E5%B7%9E%E5%B8%82">苏州</a>
+
+                                </li>
+                                <li class="firstChild">
+                                    <span>&nbsp;</span>
+                                    <a href="/GuestService/SiteQuery?Place=%E6%B1%9F%E8%8B%8F%E7%9C%81-%E5%8D%97%E4%BA%AC%E5%B8%82">南京</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E5%9B%9B%E5%B7%9D%E7%9C%81-%E6%88%90%E9%83%BD%E5%B8%82">成都</a>
+                                    <a class="orange" href="/GuestService/SiteQuery?Place=%E6%B9%96%E5%8C%97%E7%9C%81-%E6%AD%A6%E6%B1%89%E5%B8%82">武汉</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E6%B5%99%E6%B1%9F%E7%9C%81-%E6%B8%A9%E5%B7%9E%E5%B8%82">温州</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E7%A6%8F%E5%BB%BA%E7%9C%81-%E6%B3%89%E5%B7%9E%E5%B8%82">泉州</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E6%B5%99%E6%B1%9F%E7%9C%81-%E5%AE%81%E6%B3%A2%E5%B8%82">宁波</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E6%B5%99%E6%B1%9F%E7%9C%81-%E5%8F%B0%E5%B7%9E%E5%B8%82">台州</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E6%B2%B3%E5%8D%97%E7%9C%81-%E9%83%91%E5%B7%9E%E5%B8%82">郑州</a>
+                                    <a href="/GuestService/SiteQuery?Place=%E6%B1%9F%E8%8B%8F%E7%9C%81-%E5%AE%BF%E8%BF%81%E5%B8%82">宿迁</a>
+                                </li>
+                            </ul>
+                            <ul style="background: #F9F9F9; margin-top: 17px">
+                                <li class="keyli h45" style="padding: 0px 5px 5px 30px; height: 40px">
+                                    <div class="key">
+                                        <span>省份城市：</span>
+                                        <div style="width: 200px; float: left">
+                                            <input id="Place" name="Place" type="text" value="" />
+                                        </div>
+                                    </div>
+
+                                    <span>类型：</span><select id="Category" name="Category"><option value="网点名称">网点名称</option>
+<option value="派送范围">派送范围</option>
+<option value="服务电话">服务电话</option>
+</select>
+
+
+                                </li>
+                                <li class="keyli h45" style="padding: 0px 5px 5px 30px; background: #F9F9F9; height: 50px">
+                                    <span>关键词：</span>
+                                    <input id="Condition" name="Condition" placeholder="请输入关键字" style="width:230px" type="text" value="" />
+                                    <input type="submit" class="bluebutton" id="btn_siteSearch" value="搜一下" />
+                                </li>
+                            </ul>
+                            <div style="display: none">
+                                <h2>中通快递网点分布</h2>
+                                <a href="/GuestService/SiteQuery?Province=香港" title="香港中通">香港</a>
+                                <a href="/GuestService/SiteQuery?Province=海南" title="海南中通">海南</a>
+                                <a href="/GuestService/SiteQuery?Province=云南" title="云南中通">云南</a>
+                                <a href="/GuestService/SiteQuery?Province=北京" title="北京中通">北京</a>
+                                <a href="/GuestService/SiteQuery?Province=天津" title="天津中通">天津</a>
+                                <a href="/GuestService/SiteQuery?Province=新疆" title="新疆中通">新疆</a>
+                                <a href="/GuestService/SiteQuery?Province=西藏" title="西藏中通">西藏</a>
+                                <a href="/GuestService/SiteQuery?Province=青海" title="青海中通">青海</a>
+                                <a href="/GuestService/SiteQuery?Province=甘肃" title="甘肃中通">甘肃</a>
+
+                                <a href="/GuestService/SiteQuery?Province=内蒙古" title="内蒙古中通">内蒙古</a>
+                                <a href="/GuestService/SiteQuery?Province=宁夏" title="宁夏中通">宁夏</a>
+                                <a href="/GuestService/SiteQuery?Province=山西" title="山西中通">山西</a>
+                                <a href="/GuestService/SiteQuery?Province=辽宁" title="辽宁中通">辽宁</a>
+                                <a href="/GuestService/SiteQuery?Province=吉林" title="吉林中通">吉林</a>
+                                <a href="/GuestService/SiteQuery?Province=黑龙江" title="黑龙江中通">黑龙江</a>
+                                <a href="/GuestService/SiteQuery?Province=河北" title="河北中通">河北</a>
+                                <a href="/GuestService/SiteQuery?Province=山东" title="山东中通">山东</a>
+                                <a href="/GuestService/SiteQuery?Province=河南" title="河南中通">河南</a>
+
+                                <a href="/GuestService/SiteQuery?Province=陕西" title="陕西中通">陕西</a>
+                                <a href="/GuestService/SiteQuery?Province=四川" title="四川中通">四川</a>
+                                <a href="/GuestService/SiteQuery?Province=重庆" title="重庆中通">重庆</a>
+                                <a href="/GuestService/SiteQuery?Province=湖北" title="湖北中通">湖北</a>
+                                <a href="/GuestService/SiteQuery?Province=安徽" title="安徽中通">安徽</a>
+                                <a href="/GuestService/SiteQuery?Province=江苏" title="江苏中通">江苏</a>
+                                <a href="/GuestService/SiteQuery?Province=上海" title="上海中通">上海</a>
+                                <a href="/GuestService/SiteQuery?Province=浙江" title="浙江中通">浙江</a>
+                                <a href="/GuestService/SiteQuery?Province=福建" title="福建中通">福建</a>
+
+                                <a href="/GuestService/SiteQuery?Province=台湾" title="台湾中通">台湾</a>
+                                <a href="/GuestService/SiteQuery?Province=江西" title="江西中通">江西</a>
+                                <a href="/GuestService/SiteQuery?Province=湖南" title="湖南中通">湖南</a>
+                                <a href="/GuestService/SiteQuery?Province=贵州" title="贵州中通">贵州</a>
+                                <a href="/GuestService/SiteQuery?Province=广西" title="广西中通">广西</a>
+                                <a href="/GuestService/SiteQuery?Province=广东" title="广东中通">广东</a>
+                            </div>
+</form>                    </div>
+
+                </div>
+            </div>
+
+            <div class="news clearfix mt10">
+                <div class="fl case">
+
+                    <div id="slider" class="case_box">
+                        <ul>
+                                        <li class="case_1">
+                                            <a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266294" title="“黑马杯”篮球邀请赛，中通快递夺冠">
+                                                <img src="http://img.zto.cn/ServiceFiles/636392565430216852.jpg" width="280" height="200" />
+                                            </a>
+
+                                            <dl class="case_info">
+                                                <dd><a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266294">“黑马杯”篮球邀请赛，中通快递夺冠</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li class="case_2">
+                                            <a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266280" title="国家邮政局局长马军胜在中通合肥转运中心视察指导">
+                                                <img src="http://img.zto.cn/ServiceFiles/636371199907825117.jpg" width="280" height="200" />
+                                            </a>
+
+                                            <dl class="case_info">
+                                                <dd><a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266280">国家邮政局局长马军胜在中通合肥转运中心视察指导</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li class="case_3">
+                                            <a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266279" title="不忘初心，砥砺前行丨中通快递2017年年中工作总结暨理事会会议在青岛召开">
+                                                <img src="http://img.zto.cn/ServiceFiles/636371805326480479.jpg" width="280" height="200" />
+                                            </a>
+
+                                            <dl class="case_info">
+                                                <dd><a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266279">不忘初心，砥砺前行丨中通快递2017年年中工作总结暨理事会会议在青岛召开</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li class="case_4">
+                                            <a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266256" title="抓铁有痕，踏石留印丨中通如何落实实名收寄？">
+                                                <img src="http://img.zto.cn/ServiceFiles/636371807627952521.png" width="280" height="200" />
+                                            </a>
+
+                                            <dl class="case_info">
+                                                <dd><a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266256">抓铁有痕，踏石留印丨中通如何落实实名收寄？</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li class="case_5">
+                                            <a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266241" title="总理点赞 | 不忘初心，看中通如何实践快递助农">
+                                                <img src="http://img.zto.cn/ServiceFiles/636371808384865851.jpg" width="280" height="200" />
+                                            </a>
+
+                                            <dl class="case_info">
+                                                <dd><a target="_blank" href="http://www.zto.com/News/NewsDetails?id=1266241">总理点赞 | 不忘初心，看中通如何实践快递助农</a></dd>
+                                            </dl>
+                                        </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr newslist w360">
+                    <div class="title">
+                        <ul>
+                            <li class="on">公司动态</li>
+                            <li>行业新闻</li>
+                        </ul>
+                    </div>
+                    <div class="newsbd">
+                        <div class="part1">
+                            <ul>
+                                        <li>
+                                            <span class="orange">
+                                                [09-03]
+                                            </span>
+
+                                            <a href="/News/NewsDetails?id=1266302" title="中通快递集团董事、副总裁王吉雷受邀参加2017年金砖国家工商论坛">
+                                                中通快递集团董事、副总裁王吉雷受邀参...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="orange">
+                                                [09-01]
+                                            </span>
+
+                                            <a href="/News/NewsDetails?id=1266301" title="视频 | 开学啦，让大山留住童心">
+                                                视频 | 开学啦，让大山留住童心
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="orange">
+                                                [08-27]
+                                            </span>
+
+                                            <a href="/News/NewsDetails?id=1266298" title="大胆创新，真抓实干|中通快运召开成立一周年年会">
+                                                大胆创新，真抓实干|中通快运召开成立...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="orange">
+                                                [08-25]
+                                            </span>
+
+                                            <a href="/News/NewsDetails?id=1266297" title="国家邮政局副局长邢小江在中通侯马、晋城转运中心调研指导">
+                                                国家邮政局副局长邢小江在中通侯马、晋...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="orange">
+                                                [08-24]
+                                            </span>
+
+                                            <a href="/News/NewsDetails?id=1266296" title="关于强台风“天鸽”的告客户书">
+                                                关于强台风“天鸽”的告客户书
+                                            </a>
+                                        </li>
+                            </ul>
+
+                        </div>
+                        <div class="part1" style="display: none;">
+                            <ul>
+                                        <li>
+                                            <span class="orange">
+                                                [09-06]
+                                            </span><a href="/News/NewsDetails?id=1266305"> 2017中国快递“最后一公里”峰会在...</a>
+                                        </li>
+                                        <li>
+                                            <span class="orange">
+                                                [08-22]
+                                            </span><a href="/News/NewsDetails?id=1266293"> 国家邮政局关于2017年7月邮政业消...</a>
+                                        </li>
+                                        <li>
+                                            <span class="orange">
+                                                [08-20]
+                                            </span><a href="/News/NewsDetails?id=1266291"> 国家邮政局全面推进违法寄递危化品整治...</a>
+                                        </li>
+                                        <li>
+                                            <span class="orange">
+                                                [08-20]
+                                            </span><a href="/News/NewsDetails?id=1266290"> 国家邮政局下发通知，要求切实做好全运...</a>
+                                        </li>
+                                        <li>
+                                            <span class="orange">
+                                                [08-18]
+                                            </span><a href="/News/NewsDetails?id=1266289"> 国务院办公厅关于进一步推进物流降本增...</a>
+                                        </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="fr w300">
+            <div class="product">
+                <a title="中通电子面单-低成本，高效率" target="_blank" href="http://zop.zto.com/login">
+                    <img alt="中通电子面单-低成本，高效率" src="/Content/themes/ztotheme/Images/product-1.jpg" />
+                </a>
+                <a href="https://zpa.zto.com/gw/index.html" title="淘猫快递管家-您身边的天猫淘宝店铺快递管家-一件发货-快递单打印" target="_blank">
+                    <img alt="淘猫快递管家-您身边的天猫淘宝店铺快递管家-一件发货-快递单打印" src="/Content/themes/ztotheme/Images/product-2.jpg" />
+                </a>
+
+            </div>
+            <div class="twodcode clearfix">
+                <div class="fl">
+                    <div class="img">
+                        <img src="/Content/themes/ztotheme/Images/index-weichat.png" width="111" height="111" />
+                    </div>
+                    <h5 style="line-height: 180%;" class="mt10">
+                        <strong>关注中通微信</strong><br />
+                        免费推送最新物流状态
+                    </h5>
+
+                </div>
+                <div class="fr">
+                    <div class="img">
+                        <img src="/Content/themes/ztotheme/Images/index-app.png" width="111" height="111" />
+                    </div>
+                    <h5 style="line-height: 180%" class="mt10">
+                        <strong>下载手机客户端</strong><br />
+                        随时随地，想查就查
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="WeiboaAtivity" title="下载中通APP赢好礼" style="display: none; width: 159px; height: 149px; overflow: hidden; position: fixed; _position: absolute; _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||200)-(parseInt(this.currentStyle.marginBottom,10)||0))); left: 10px; bottom: 10px; z-index: 950;">
+    <a id="closeWeiboaAtivity" style="font-size: 12px; cursor: pointer">关闭</a>
+    <a href="http://weibo.com/2365681750/BkXmi6uE9?mod=weibotime " target="_blank">
+        <img src="/Content/themes/ztotheme/Images/appg.gif" />
+    </a>
+</div>
+<link rel="stylesheet" href="/Scripts/proselect/skin/yixun/css/jquery.bigautocomplete.css" type="text/css" />
+<link rel="stylesheet" href="/Scripts/proselect/skin/yixun/css/jquery.ztoDialogProvince.css" type="text/css" />
+<script src="/Scripts/proselect/Places.js?v20170405" type="text/javascript"></script>
+<script type="text/javascript" src="/Scripts/proselect/js/jquery.bigautocomplete.js"></script>
+<script type="text/javascript" src="/Scripts/proselect/js/jquery.ztoprovincedialog.js"></script>
+        <script type="text/javascript" src="/Content/themes/ztotheme/js/index.js"></script>
+
+
+<script>
+    //省市联动
+    $(function () {
+        $("#Place").ztoProvinceDialog({
+            Geolocation: false, //是否开启定位
+            GeoMoblie: false, //只允许移动设备开启定位功能，需要开启Geolocation。
+            GeolocationInsert: false, //是否将定位的数据自动写入input中
+            GeolocationIMG: false, //文本框右侧是否添加定位图标
+            DropdownIMG: true, //文本框右侧是否添加下拉图标，定位图标优先，有定位图标时，不显示下拉图标
+            AutoTips: true,//是否自动提示：请先引用对应的css、js
+            Readonly: true,//文本输入框是否只读
+            IsDataCheck: true,//是否启用数据验证
+            AutoDataUrl: "Area.js", //自动提示数据地址，支持JSONP
+            InputDefaultText: "请输入或者选择省市县", //文本框默认文字
+            zindex: 998,//弹出层堆叠顺序
+            CityData: "",//城市数据路径，支持JSONP  http://www.zto.com/ajax/province/?callback=?
+            AreaData: "", //区域数据路径，支持JSONP  http://www.zto.com/ajax/province/?callback=?
+            Order: false,//是否在线下单
+            inArea: false//是否超区
+
+        });
+    });
+</script>
+<script type="text/javascript" src="/Content/themes/ztotheme/js/script.js"></script>
+
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript">
+    $(function () {
+        var $div_li = $(".branchsearch .title .fr ul li");
+        $div_li.click(function () {
+            $(this).addClass("on").siblings().removeClass("on");
+            var index = $div_li.index(this);
+            $(".branchbd > .part1").eq(index).show().siblings().hide();
+        }).hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        });
+    });
+    $(function () {
+        var $div_li = $(".newslist .title ul li");
+        $div_li.click(function () {
+            $(this).addClass("on").siblings().removeClass("on");
+            var index = $div_li.index(this);
+
+            $(".newsbd > .part1")
+                .eq(index).show()
+                .siblings().hide();
+        }).hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        });
+        //清空单号
+        $("#cleanbill").click(function () {
+            $("#txtbill").val("");
+        });
+    });
+    function checkBillData() {
+        var arrChk = $("input[name^=checkbox]:checked");
+        if (arrChk.length <= 0) {
+            if (checkBill("1")) {
+                $("#formbill").prop("action", "/GuestService/BillNew");
+                document.formbill.submit();
+            } else {
+                return false;
+            }
+        } else {
+            if (checkBill("0")) {
+                $("#formbill").prop("action", "/GuestService/InternationalBillQuery");
+                document.formbill.submit();
+            } else {
+                return false;
+            }
+        }
+    };
+    //验证单号
+    function checkBill(type) {
+        var txtbill = document.getElementById("txtbill");
+        if (txtbill.value.trim() == "") {
+            alert("请输入运单号码 !!");
+            return false;
+        }
+        var listI = txtbill.value.trim().split("\r\n");
+        var listF = txtbill.value.trim().split("\n");
+        var list = null;
+        if (listI.length > listF.length) {
+            list = listI;
+        } else {
+            list = listF;
+        }
+        if (list.length > 20) {
+            alert('一次最多只能查询20个快件单号');
+            return false;
+        }
+        var msg = "";
+        if (type == "1") {
+
+            for (i = 0; i < list.length; i++) {
+                var len = i + 1;
+                var bill = sTrim(list[i].trim(), "g");
+                if (bill.length != 12 && bill.length != 0) {
+                    msg += '第' + len + '个快件单号[' + bill + ']长度必须等于12!\n';
+                }
+                else if (isNaN(bill)) {
+                    msg += '第' + len + '个快件单号必须是数字,且为半角输入法!\n';
+                }
+            }
+        }
+        if (msg != "") {
+            alert("亲，出现错误啦！\r\n" + msg);
+            return false;
+        } else {
+            return true;
+        }
+    }
+    function sTrim(str, isglobal) {
+        var result;
+        result = str.replace(/(^\s+)|(\s+$)/g, "");
+        if (isglobal.toLowerCase() == "g")
+            result = result.replace(/\s/g, "");
+        return result;
+    }
+</script>
+
+
+
+    <div style="width: 980px; position: relative; margin: 0px auto">
+    </div>
+    <div id="floot">
+        <div class="flootcont clearfix">
+            <div class="icon1"></div>
+            <div class="icon2"></div>
+            <div class="fl w660">
+                <h5>中通快递 © 版权所有  <a href="http://www.miitbeian.gov.cn" target="_blank" style="color:#fff">沪ICP备13044869号</a>  简历投递邮箱：zp-hr@zto.cn<br />
+                    总部地址：上海市青浦区华新镇华志路1685号
+                    <script type="text/javascript">
+
+                        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F53a93979e64ab8e76c06653f6830c385' type='text/javascript'%3E%3C/script%3E"));
+
+                    </script>
+                    邮政编码：201708   咨询电话：95311</h5>
+                <div class="beianicon">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="http://www.sgs.gov.cn/shaic/" target="_blank">
+                                <img src="/Content/themes/ztotheme/Images/base/beianicon-1.png" width="30" height="30">
+                            </a></li>
+                        <li>
+                            <a href="http://www.zx110.org/" target="_blank">
+                                <img src="/Content/themes/ztotheme/Images/base/beianicon-2.png" width="30" height="33"></a>
+                        </li>
+                        
+                        <li>
+                            <a href="http://www.51315.cn/company_details_1161" title="诚信在线" target="_blank">
+                                <img src="/Content/themes/ztotheme/Images/base/beianicon-4.png" width="30" height="33" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011802001028" target="_blank">
+                                <img src="/Content/themes/ztotheme/Images/base/1_04.png" width="138" height="35"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr w300">
+                 <ul class="flink">
+                      <li><a href="http://mail.zto.cn/" target="_blank">企业邮箱</a></li>
+                    <li><a href="http://www.zt-express.com/" target="_blank">中通内网门户</a></li>
+                       <li><a href="http://www.spb.gov.cn/" target="_blank">国家邮政局</a></li>
+                
+                    <li><a href="http://www.ztbest.com/" target="_blank">中通优选</a></li>
+                      <li><a href="https://sec.zto.com  " target="_blank">安全响应中心</a></li>
+                     
+
+                    <li><a href="http://www.cea.org.cn/" target="_blank">快递协会</a></li>
+                     <li><a href="/Job">人才招聘</a></li>
+                     <li><a href="/LegalPrivacy/LegalNotices" target="_blank">法律声明</a></li>
+                     <li><a href="/LegalPrivacy/PrivacyProtection" target="_blank">隐私保护</a></li>
+                 </ul>
+            </div>
+        </div>
+    </div>
+    <div class="go">
+        <a title="返回顶部" class="top"></a>
+        
+
+        
+                <a title="中通吉信客服-工作时间：9:00-21:00" href="http://kefu.jx.zto.com/webim/im.html?tenantId=27801&to=systemkefu&appKey=ssy%23chat&xmppServer=im-api.jx.zto.com:5280&restServer=a1.jx.zto.com:8080" target="_blank" class="jixin"></a>
+
+        <a title="投诉与留言" class="feedback" href="/GuestService/GuestBook" target="_blank"></a>
+        <a title="全国客服投诉电话" class="tel" href="/GuestService/Complaints/" target="_blank"></a>
+        <a title="返回底部" class="bottom"></a>
+    </div>
+
+    
+    
+    <!--[if IE 6]> 
+	<script type="text/javascript" src="/Content/themes/ztotheme/js/DD_belatedPNG.js"></script>
+	<script type="text/javascript">
+	    DD_belatedPNG.fix('div,img,a');
+	</script>
+<![endif]-->
+</body>
+</html>

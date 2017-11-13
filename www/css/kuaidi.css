@@ -1,0 +1,285 @@
+.content{
+	margin-top:20px;
+}
+.content .right{
+	width:189px;
+	height:828px;
+	float:left;
+}
+.content .right .top{
+	width:100%;
+	height:406px;
+}
+.content .right .top .title{
+	width:179px;
+	height:31px;
+	background:#008BF6;
+	opacity: 0.8;
+	padding-top:5px;
+	padding-left:10px;
+}
+.content .right .top .title .search{
+	float:left;
+	width:29px;
+	height:26px;
+	background:url(../picture_kuaidi/query.png) no-repeat;
+}
+.content .right .top .title h4{
+	margin-left:10px;
+	line-height:31px;
+	color:white;
+	font-size:15px;
+	float:left;
+}
+.content .right .top .list{
+	height:368px;
+	width:100%;
+	background:#F9F9F9;
+}
+.content .right .top .list li{
+	height:11%;
+	width:100%;
+	border-top:1px dashed #CCCCCC;
+	
+}
+.content .right .top .list li .img{
+	width:34px;
+	height:100%;
+	float:left;
+	background:url(../images_kuaidi/point.png)no-repeat center center;
+}
+.content .right .top .list li h3{
+	
+	font-weight: 400;
+	font-size:14px;
+	float:left;
+	padding-top:10px;
+}
+.content .right .top .list li h3:hover{
+	transition: all 0.5s;
+	margin-left:65px;
+	color:blue;
+	
+}
+.content .right .top .list li:nth-child(7) h3:hover{
+	transition: all 0.5s;
+	margin-left:15px;
+	color:blue;	
+}
+.content .right .top .list li:nth-child(8) h3:hover{
+	transition: all 0.5s ease-in-out 2s;
+	margin-left:9px;
+	color:blue;	
+}
+.content .right .bottom{
+	width:100%;
+	height:402px;
+	padding-top:20px;
+	background:#F9F9F9;
+}
+.content .right .bottom .title{
+	width:179px;
+	height:31px;
+	background:#008BF6;
+	padding-top:5px;
+	padding-left:10px;
+}
+.content .right .bottom .title .people{
+	float:left;
+	width:29px;
+	height:26px;
+	background:url(../images/serviceicon-2.png);
+}
+.content .right .bottom .title h4{
+	margin-left:10px;
+	line-height:31px;
+	color:white;
+	font-size:15px;
+	float:left;
+}
+.content .right .bottom .icon{
+	height:366px;
+	width:100%;
+	background:#F9F9F9;
+}
+.content .right .bottom .icon ul{
+	width:30%;
+	float:left;
+}
+.content .right .bottom .icon ul li{
+	width:100%;
+	height:77px;
+}
+.content .right .bottom .icon ul li img{
+ display: block;
+  margin:0 auto;
+  padding-top:21px;
+}
+.content .right .bottom .icon ul li h5{
+	padding-top:11px;
+	font-size: 13px;
+	text-align: center;
+	font-weight:400;
+}
+.content .left{
+	width:768px;
+	float:left;
+	margin-left:21px;
+}
+.content .left .top{
+	height:174px;
+	width:100%;
+	background:url(../picture_kuaidi/query.jpg);
+}
+.content .left .zhognjian{
+	width:750px;
+	padding-left:18px;
+	background:#F9F9F9;
+	margin-top: 22px;
+	border-top:2px solid #3DA3FF;
+}
+.content .left .zhognjian .query{
+	width:100%;
+	height:271px;
+}
+.content .left .zhognjian .query .title{
+	height:49px;
+	width:100%;
+}
+.content .left .zhognjian .query .title .img{
+	width:33px;
+	height:100%;
+	float:left;
+	background:url(../picture_kuaidi/search.png) no-repeat center center;
+}
+.content .left .zhognjian .query .title h3{
+	color:#2E9CFF;
+	line-height:49px;
+	height:49px;	
+}
+.content .left .zhognjian .query textarea{
+	height:96px;
+	width:712px;
+	border:1px solid #D6D6D6;
+	padding-top:25px;
+	padding-left:22px;
+	font-size:15px;
+	outline-style:none;
+}
+.content .left .center .query .sure{
+	height:42px;
+	width:100%;
+}
+.content .left .zhognjian .query .sure .left{
+	width:108px;
+	height:30px;
+	margin-left:0;
+	padding-top:12px;
+	position:relative;
+}
+.content .left .zhognjian .query .sure .left .box{
+	width:106px;
+	height:28px;
+	border:1px solid blue;
+	font-size:15px;
+	color:blue;
+	text-align: center;
+	line-height:28px;
+}
+.content .left .zhognjian .query .sure .left .img{
+	position:absolute;
+	top:0;
+	right:0;
+	width:23px;
+	height:11px;
+	background: url(../picture_kuaidi/new.gif);
+}
+.content .left .zhognjian .query .sure .right{
+	width:103px;
+	height:34px;
+	margin-right:13px;
+	padding-top:10px;
+	float:right;
+}
+.content .left .zhognjian .query .sure .right h4{
+	width:103px;
+	height:34px;
+	background:#FF8840;
+	color:white;
+	font-size:15px;
+	text-align: center;
+	line-height:34px;
+	}
+.content .left .bottom{
+	height:262px;
+	width:100%;
+	background:url(../picture_kuaidi/maipangxie.jpg);
+}
+.content .left .zhognjian .display{
+	width:737px;
+	border:1px solid #D6D6D6;
+	margin-bottom:20px;
+}
+.content .left .zhognjian .display h3{
+	height:46px;
+	width:100%;
+	color:blue;
+	text-align: center;
+	font-size: 18px;
+	line-height:46px;
+}
+.content .left .zhognjian .display ul{
+	height:160px;
+	width:100%;
+}
+.content .left .zhognjian .display ul li{
+	height:100px;
+	width:182px;
+	border:1px dashed #D6D6D6;
+	float:left;
+	padding-top:60px;
+}
+.content .left .zhognjian .display ul li img{
+	display: block;
+	margin:0 auto;
+	height:45px;
+	width:45px;
+	
+}
+.content .left .zhognjian .display ul li h4{
+	margin-top:10px;
+	font-size: 13px;
+	text-align: center;
+	
+}
+.content .left .zhognjian .display #list{
+	width:737px;
+	border:1px solid #D6D6D6;	
+
+}
+.content .left .zhognjian .display #list .item{
+	height:69px;
+	width:697px;
+	margin: 0 auto;
+	border-bottom:1px dashed #D6D6D6 ;
+	padding-top:17px;
+	position:relative;
+}
+.content .left ..zhognjian .display #list .img{
+	background:url(../images_kuaidi/billsearch_route_all.png);
+	height:20px;
+	width:20px;
+	position:absolute;
+	top:17px;
+	left:0px;
+}
+.content .left .zhognjian .display #list .item h4{
+	text-indent:32px;
+	font-size:16px;
+}
+.content .left .zhognjian .display #list .item h5{
+	height:22px;
+	padding-top:10px;
+	text-indent:32px;
+	font-size:12px;
+}

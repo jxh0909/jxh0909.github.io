@@ -1,0 +1,175 @@
+.content{
+    margin-top:20px;
+}
+.content .right{
+    width:189px;
+    float:left;
+}
+.content .right .top{
+    width:100%;
+
+}
+.content .right .top .title{
+    width:179px;
+    height:31px;
+    background:#008BF6;
+    opacity: 0.8;
+    padding-top:5px;
+    padding-left:10px;
+}
+.content .right .top .title .search{
+    float:left;
+    width:29px;
+    height:26px;
+    background:url(../picture_kuaidi/query.png) no-repeat;
+}
+.content .right .top .title h4{
+    margin-left:10px;
+    line-height:31px;
+    color:white;
+    font-size:15px;
+    float:left;
+}
+.content .right .top .list{
+    height:270px;
+    width:100%;
+}
+.content .right .top .list li{
+    height:11%;
+    width:100%;
+}
+.content .right .top .list li .img{
+    width:34px;
+    height:100%;
+    float:left;
+    background:url(../images_kuaidi/point.png)no-repeat center center;
+}
+.content .right .top .list li h3{
+
+    font-weight: 400;
+    font-size:14px;
+    float:left;
+    padding-top:10px;
+}
+.content .right .top .list li h3:hover{
+    transition: all 0.5s;
+    margin-left:65px;
+    color:blue;
+
+}
+.content .right .top .list li:nth-child(7) h3:hover{
+    transition: all 0.5s;
+    margin-left:15px;
+    color:blue;
+}
+.content .right .top .list li:nth-child(8) h3:hover{
+    transition: all 0.5s ease-in-out 2s;
+    margin-left:9px;
+    color:blue;
+}
+.content .right .bottom{
+    width:100%;
+    height:402px;
+    padding-top:20px;
+    background:#F9F9F9;
+}
+.content .right .bottom .title{
+    width:179px;
+    height:31px;
+    background:#008BF6;
+    padding-top:5px;
+    padding-left:10px;
+}
+.content .right .bottom .title .people{
+    float:left;
+    width:29px;
+    height:26px;
+    background:url(../images/serviceicon-2.png);
+}
+.content .right .bottom .title h4{
+    margin-left:10px;
+    line-height:31px;
+    color:white;
+    font-size:15px;
+    float:left;
+}
+.content .right .bottom .icon{
+    height:366px;
+    width:100%;
+    background:#F9F9F9;
+}
+.content .right .bottom .icon ul{
+    width:30%;
+    float:left;
+}
+.content .right .bottom .icon ul li{
+    width:100%;
+    height:77px;
+}
+.content .right .bottom .icon ul li img{
+    display: block;
+    margin:0 auto;
+    padding-top:21px;
+}
+.content .right .bottom .icon ul li h5{
+    padding-top:11px;
+    font-size: 13px;
+    text-align: center;
+    font-weight:400;
+}
+.content #left{
+    width:770px;
+    float:right;
+    background-color: #F9F9F9;
+}
+.content #left .ditu{
+    width:100%;
+}
+.content #left .ditu .map{
+    height:759px;
+    width:730px;
+    padding:20px;
+}
+.content #left .ditu .map .title{
+    height:22px;
+    width:100%;
+}
+.content #left .ditu .map .title img{
+    display:inline-block;
+    height:22px;
+    width:26px;
+    float:left;
+}
+.content #left .ditu .map .title h3{
+    font-size: 14px;
+    color:blue;
+    margin-left:35px;
+   padding-top:5px;
+}
+.content #left .ditu .listcontent{
+    height:675px;
+    width:677px;
+    margin-top: 10px;
+    padding:20px 30px;
+    border:1px solid #e7e7e7;
+}
+.content #left .ditu .listcontent>p{
+  height:40px;
+    line-height: 40px;
+    color:blue;
+    font-size:14px;
+    border-bottom: 1px dashed #e7e7e7;
+}
+.content #left .ditu .listcontent>span{
+    font-size:13px;
+    height:20px;
+    line-height:20px;
+    display: block;
+    margin-top:10px;
+}
+.content #left .ditu .listcontent>#allmap{
+    height:440px;
+    width:560px;
+    background-color: red;
+    margin-top:122px;
+}

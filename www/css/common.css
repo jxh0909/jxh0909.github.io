@@ -1,0 +1,39 @@
+p,div,span,h1,h2,h3,h4,h5,h6,ul,li,dl,dd,dt,body,input{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+/*清除浮动*/
+.cleartext:after{
+	content:"";
+	height:0;
+	line-height:0;
+	visibility:hidden;
+	clear:both;
+	display:block;
+}
+.clearfix{
+	zoom: 1;
+}
+body{
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+/*版心*/
+.w{
+	width:980px;
+	margin:0 auto;
+}
+.scrollTop_wrap{
+	height:400px;
+	width:120px;
+	position:fixed;
+	bottom:5px;
+	right:50px;
+	background: url(../images/service_online_v4.png) no-repeat -58px -2px;
+}

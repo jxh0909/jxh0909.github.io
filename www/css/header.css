@@ -1,0 +1,205 @@
+.header{
+	width:100%;
+	height:20px;
+	background-color:#FAFAFA;
+}
+.header .top{
+	height:100%;
+}
+.header .top>ul{
+	height:100%;
+	width:275px;
+	float:right;
+}
+.header .top>ul>li{
+	padding-right:14px;
+	border-right:1px solid #CBCBCB;
+	margin-right:14px;
+	font-size:12px;
+	float:left;
+	margin-top:2px;
+}
+.header .top>ul>li>a{
+	display: block;
+	color:#333353;
+}
+.header .top>ul>li:last-child{
+	margin-right: 0px;
+}
+.header .top>ul>li>a:hover{
+	text-decoration: underline;
+}
+.center{
+	height:109px;
+	width:100%;
+	background:#008BF6;
+}
+.center .logo{
+	height:100%;
+}
+.center .logo>.left{
+	float:left;
+	width:454px;
+	height:47px;
+    padding-top:32px;
+}
+.center .logo>.left .box1{
+	width:250px;
+	height:47px;
+	background:url("../picture/logo.png") no-repeat;
+	float:left;
+}
+.center .logo>.left .box2{
+	width:198px;
+	height:26px;
+	background:url("../picture/head-image_18.png")no-repeat;
+	float:right;
+	margin-top:24px;
+}
+.center .logo>.center{
+	width:69px;
+	height:79px;
+	margin-left:142px;
+	background:url("../picture/zto_nyse.png") no-repeat;
+	float:left;
+	margin-top:20px;
+}
+.center .logo>.right{
+	width:280px;
+	height:36px;
+	margin-left:35px;
+	float:left;
+	padding-top:24px;
+}
+.center .logo>.right ul{
+	height:100%;
+	width:100%;
+}
+.center .logo>.right li{
+	height:100%;
+	width:45px;
+	margin-right:13px;
+	float:left;
+	position:relative;
+}
+.center .logo>.right li:last-child{
+	margin-right: 0;
+}
+
+.center .logo .right li .ewm_zhifubao {
+	width:162px;
+	height:195px;
+	position:absolute;
+	top:1px;
+    left:-55px;
+    position:relative;
+    z-index:3;
+    display: none;
+}
+.center .logo .right li:hover .ewm_zhifubao{
+	display: block;
+} 
+.center .logo .right li .ewm_zhifubao .small{
+	height:20px;
+	width:20px;
+	transform: rotate(45deg);
+	border:1px solid #E5E5E5;
+	border-bottom: 0 none;
+	border-right:0 none;
+	position:absolute;
+    top:0px;
+    left:66px;
+    background-color: white;
+}
+.center .logo .right li .ewm_zhifubao .big{
+	height:180px;
+	width:160px;                      
+	border:1px solid #E5E5E5;
+	position:absolute;
+    top:10px;
+    background-color: white;
+}
+.center .logo .right li .ewm_zhifubao .erweima{
+	height:111px;
+	width:111px;
+	margin:0 auto;
+	margin-top:20px;
+	position:relative;
+}
+.center .logo .right li .ewm_zhifubao .er{
+	display:block;
+	height:111px;
+	width:111px;
+	margin:0 auto;
+	margin-top:20px;
+}
+.center .logo .right li .ewm_zhifubao p{
+	text-align: center;
+	line-height:20px;
+}
+
+/*导航部分*/
+.bottom{
+	width:100%;
+	height:36px;
+	background-color:#FF9C00;
+}
+.bottom .nav{
+	height:100%;
+	position:relative;
+}
+.bottom .nav .n{
+	height:36px;
+	width:740px; 
+	float:left;
+}
+.bottom .nav .n li{
+	float:left;
+}
+.bottom .nav .n li a{
+	display:block;
+	width: 86px;
+	height:100%;	
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	line-height:36px;
+}
+.bottom .nav .n li:last-child a{
+	width:137px;
+}
+
+.bottom .nav .n li>a:hover{	
+	text-decoration: underline;
+}
+.bottom .nav .n li.now{
+	background-color:#FFAD2C;
+}
+.bottom .nav>.img{
+	width:240px;
+	height:61px;
+	background:url("../picture/kefuicon1.png");
+	position:absolute;
+	bottom:0;
+	right:0;}
+.bottom .nav .xlk{
+	z-index: 5;
+	width:86px;	
+	display: none;
+}
+.bottom .nav .xia{
+	font-size:14px;
+	line-height:36px;
+	text-align: center;
+	height:36px;
+	background-color:#FFAD2C;
+	border-bottom:1px dashed white;
+	width:86px;
+	color:white;
+}
+.bottom .nav .xia:hover{
+	background-color:#FFBF5D ;
+}
+.bottom .nav .xia:last-child{
+	border:none;
+}

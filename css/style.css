@@ -2,6 +2,7 @@ html {
   margin: 0px;
   padding: 0px;
   font-size: 12px;
+  background: url("../background.jpg");
 }
 ::-webkit-scrollbar {
   display: none;
@@ -18,8 +19,7 @@ html {
 }
 body {
   height: 100%;
-  /*background-image: url("../img/logo1.jpg");*/
-  /*background-size: 100% 100%;*/
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 a {
@@ -124,7 +124,6 @@ a {
 }
 .logo {
   margin: 0px;
-
 }
 .nav-list {
   list-style: none;
